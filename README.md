@@ -1,33 +1,27 @@
-![](http://i.imgur.com/DUiL9yn.png)
+# React.js YouTube Searcher
+#### Jeff Seymour | August 2016
 
-# React/Sass/Redux Boilerplate
+### Description
+##### This is a simple YouTube Search app built with React.js to practice more React basics and ES6 syntax. Users can type in the search bar and instantly see a populated list of results pulled from the YouTube API. Users can also watch the videos and read their descriptions.
 
-Boilerplate and guide for a React/Sass/Redux build.
+##### !NOT FINISHED YET!
 
-## Getting Started
+---
 
-To get started, first install all the necessary dependencies.
-```
-> npm install
-```
+### Technologies Used
+##### HTML5, SCSS, React, Webpack, YouTube API
 
-Run an initial webpack build
-```
-> webpack
-```
+### Dependencies
+Make sure these are installed first.
 
-Start the development server (changes will now update live in browser)
-```
-> npm run start
-```
+* [Node.js](http://nodejs.org)
 
-To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
+### Quick Start
+Clone repository  
+```npm install```  
+```webpack```  
+```npm run start```  
+View in browser at localhost:3000
 
-## Links
-
-- [Donate](https://www.patreon.com/thenewboston)
-- [thenewboston.com](https://thenewboston.com/)
-- [Facebook](https://www.facebook.com/TheNewBoston-464114846956315/)
-- [Twitter](https://twitter.com/bucky_roberts)
-- [Google+](https://plus.google.com/+BuckyRoberts)
-- [reddit](https://www.reddit.com/r/thenewboston/)
+### License
+The code is available under the [MIT License](LICENSE.md).

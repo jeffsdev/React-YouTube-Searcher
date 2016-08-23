@@ -24,17 +24,18 @@
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
     "redux-promise": "^0.5.3",
-    "react-router": "^2.7.0",
     "redux-thunk": "^2.1.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
-    "webpack-hot-middleware": "^2.11.0"
+    "webpack-hot-middleware": "^2.11.0",
+    "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",

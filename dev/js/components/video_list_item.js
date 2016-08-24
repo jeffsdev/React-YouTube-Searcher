@@ -2,14 +2,14 @@ import React from 'react';
 
 
 
-const VideoListItem = ({video}) => {
+const VideoListItem = ({video, onVideoSelect}) => {
   // const video = props.video; same thing as ({video}) above, rather than (props)
 
   const imageURL = video.snippet.thumbnails.default.url;
 
   return (
 
-    <li className="">
+    <li className="" onClick={() => onVideoSelect(video)}>
 
       <div className="video-list">
         <div className="">

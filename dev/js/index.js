@@ -41,11 +41,13 @@ class App extends Component {
     console.log(this.state.videos);
     return (
       <div>
+        <header>
+          <SearchBar onSearchTermChange={videoSearch}/>
+        </header>
         <div className="video-area">
           <VideoDetail video={this.state.selectedVideo}/>
         </div>
 
-        <SearchBar onSearchTermChange={videoSearch}/>
         <VideoList
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
           videos={this.state.videos}

@@ -4,12 +4,22 @@
     position: relative;
     height: calc(50vh - 50px);
     overflow: hidden;
+    background: #111;
+    @media screen and #{$tablet} {
+      height: calc(50vh - 75px);
+    }
+    @media screen #{desktop} and (orientation: landscape) {
+      height: calc(66vh - 75px);
+    }
   }
 
   iframe {
+    max-width: 1400px;
+
     position: absolute;
     top:0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     height: 100%;
     border: 0;
@@ -20,16 +30,31 @@
     flex-direction: column;
     justify-content: center;
     color: #ddd;
-    max-width: 768px;
+    max-width: 1024px;
     min-height: 34vh;
     margin: auto;
     padding: 25px 20px;
+    text-align: center;
+    @media screen and #{$tablet} {
+      min-height: 25vh;
+    }
+    @media screen #{desktop} and (orientation: landscape) {
+      min-height: calc(34vh);
+    }
+
+
     .details-title {
       font-size: 2rem;
       text-align: center;
       margin-bottom: 35px;
     }
-    h2, h3 {
+    .details-channel {
+      margin:  0 auto 35px auto;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h2 {
       text-align: center;
       margin-bottom: 1em;
       color: $red;
@@ -43,4 +68,5 @@
   text-align: center;
   padding: 50px;
   color: $red;
+  min-height: 100vh;
 }

@@ -5,7 +5,7 @@ import React from 'react';
 const VideoListItem = ({video, onVideoSelect}) => {
   // const video = props.video; same thing as ({video}) above, rather than (props)
 
-  const imageURL = video.snippet.thumbnails.default.url;
+  const imageURL = video.snippet.thumbnails.high.url;
 
   return (
 
@@ -16,6 +16,7 @@ const VideoListItem = ({video, onVideoSelect}) => {
 
         <div className="media-body">
           <span className="media-heading">{video.snippet.title}</span>
+          <p className="media-desc">{video.snippet.description}</p>
         </div>
       </div>
 

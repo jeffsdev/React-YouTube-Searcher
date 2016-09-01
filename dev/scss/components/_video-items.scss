@@ -1,7 +1,23 @@
 .video-list {
+ul {
+  max-width: 1400px;
+  @media screen and #{$desktop} {
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    li {
+      max-width: 49%;
+      flex: 1 1 49%;
+      // margin: 20px;
+    }
+  }
+
+
+}
   h2 {
     text-align: center;
-    color: $red;
+    color: #222;
     margin-bottom: 1em;
   }
 
@@ -10,7 +26,15 @@
     height: auto;
     margin-bottom: 25px;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    @media screen and #{$desktop} {
+    width: 100%;
+    flex: 1 1 100%;
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
   }
 
   .media-object {
@@ -23,11 +47,32 @@
 
   .media-body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    font-size: 18px;
-    color: #222;
+    padding: 20px;
+    font-size: 16px;
+    color: #ddd;
     font-weight: bold;
     flex: 1;
+    height: auto;
+        overflow: hidden;
+    @media screen and #{$tablet} {
+      font-size: 1.5em;
+    }
+
+    
+    .media-desc {
+      display: none;
+      @media screen and #{$desktop} {
+        display: inline-block;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 35px;
+        font-weight: normal;
+        max-width: 100%;
+        color: #aaa;
+      }
+    }
   }
 }

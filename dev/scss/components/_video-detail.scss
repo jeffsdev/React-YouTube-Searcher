@@ -2,7 +2,7 @@
 
   .embed-responsive {
     position: relative;
-    height: 60vh;
+    height: calc(50vh - 50px);
     overflow: hidden;
   }
 
@@ -16,15 +16,25 @@
   }
 
   .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #ddd;
     max-width: 768px;
+    min-height: 34vh;
     margin: auto;
-    padding: 25px 0;
+    padding: 25px 20px;
     .details-title {
       font-size: 2rem;
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
+    h2, h3 {
+      text-align: center;
+      margin-bottom: 1em;
+      color: $red;
+    }
+
   }
 
 }

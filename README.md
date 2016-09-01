@@ -4,7 +4,7 @@
 ### Description
 ##### This is a simple YouTube Search app built with React.js to practice more React basics and ES6 syntax. Users can type in the search bar and instantly see a populated list of results pulled from the YouTube API. Users can also watch the videos and read their descriptions.
 
-##### !NOT FINISHED YET!
+### [View Live Demo](https://jeffsdev.github.io/React-YouTube-Searcher/)
 
 ---
 

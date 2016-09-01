@@ -14,9 +14,12 @@ const VideoList = (props) => {
 
 
   return (
-    <ul>
-      {videoItems}
-    </ul>
+    <div className="recommended-videos">
+    <h2>Recommended Videos</h2>
+      <ul>
+        {videoItems}
+      </ul>
+    </div>
   );
 };
 

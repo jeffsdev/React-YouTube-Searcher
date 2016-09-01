@@ -4,6 +4,9 @@ import React from 'react';
 const VideoDetail = ({video}) => {
 
   if(!video) {
+    return <h1 className="search-error">No Results...</h1>;
+  }
+  if(!video.snippet.description) {
     return <div>Loading...</div>;
   }
 

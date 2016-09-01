@@ -12,12 +12,10 @@ const VideoListItem = ({video, onVideoSelect}) => {
     <li className="" onClick={() => onVideoSelect(video)}>
 
       <div className="video-item">
-        <div className="">
-          <img className="media-object" src={imageURL}/>
-        </div>
+        <img className="media-object" src={imageURL}/>
 
         <div className="media-body">
-          <div className="media-heading">{video.snippet.title}</div>
+          <span className="media-heading">{video.snippet.title}</span>
         </div>
       </div>
 
